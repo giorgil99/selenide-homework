@@ -12,6 +12,8 @@ public class SelenideBasics2Test {
 
     public void books() {
         Configuration.browser = "chrome";
+        Configuration.holdBrowserOpen = true;
+
         open("https://demoqa.com/books");
 //        Using inner elements locators chain Find all books with publisher 'O'Reilly Media' containing title 'Javascript'
 //        Check with selenide soft assertions that size of returned list equals to 10(failed case)
